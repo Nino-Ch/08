@@ -1,0 +1,159 @@
+.cover {
+  width: 95%;
+  height: 790px;
+  display: flex;
+  margin: 0 auto;
+  background-image: url(../images/2614725.png);
+  background-repeat: no-repeat;
+}
+.moon {
+  width: 110px;
+  height: 110px;
+  background: #f4f1c9;
+  border-radius: 50%;
+  box-shadow: 0 0 40px 15px #f4f1c9;
+  position: absolute;
+  top: 130px;
+  left: 335px;
+}
+.star {
+  width: 5px;
+  height: 5px;
+  background: #f4f1c9;
+  border-radius: 50%;
+  position: absolute;
+  animation: twinkle 2s infinite ease-in-out;
+}
+.star:nth-child(1) {
+  top: 160px;
+  left: 170px;
+}
+.star:nth-child(2) {
+  top: 450px;
+  left: 300px;
+}
+.star:nth-child(3) {
+  top: 170px;
+  left: 750px;
+}
+.star:nth-child(4) {
+  top: 140px;
+  right: 550px;
+}
+.star:nth-child(5) {
+  top: 250px;
+  right: 350px;
+}
+.star:nth-child(6) {
+  top: 120px;
+  right: 250px;
+}
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+.firefly {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #ffd700;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #ffd700;
+  animation: flyRandom 2s infinite ease-in-out;
+  z-index: 1;
+}
+.firefly:nth-child(1) {
+  top: 400px;
+  left: 55px;
+  animation-delay: 1s;
+}
+.firefly:nth-child(2) {
+  top: 750px;
+  left: 350px;
+  animation-delay: 1s;
+}
+.firefly:nth-child(3) {
+  top: 550px;
+  left: 60px;
+  animation-delay: 2s;
+}
+.firefly:nth-child(4) {
+  top: 770px;
+  left: 600px;
+  animation-delay: 2s;
+}
+.firefly:nth-child(5) {
+  top: 750px;
+  left: 120px;
+  animation-delay: 1s;
+}
+.firefly:nth-child(6) {
+  top: 700px;
+  right: 120px;
+  animation-delay: 2s;
+}
+.firefly:nth-child(7) {
+  top: 750px;
+  right: 450px;
+  animation-delay: 2s;
+}
+.firefly:nth-child(8) {
+  top: 550px;
+  right: 80px;
+  animation-delay: 1s;
+}
+.firefly:nth-child(9) {
+  top: 750px;
+  right: 670px;
+  animation-delay: 1s;
+}
+.firefly:nth-child(10) {
+  top: 350px;
+  right: 70px;
+  animation-delay: 2s;
+}
+@keyframes flyRandom {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20px, -20px);
+  }
+  50% {
+    transform: translate(30px, 10px);
+  }
+  75% {
+    transform: translate(10px, -15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.shooting-star {
+  position: absolute;
+  height: 50px;
+  top: 0;
+  left: 90px;
+  transform: rotate(35deg);
+  background: url(../images/vecteezy_shooting-star_36640449.svg);
+  opacity: 1;
+  animation: movingstar 10s ease infinite 1s;
+}
+@keyframes movingstar {
+  0% {
+    top: 0px;
+    left: 200 px;
+  }
+  100% {
+    top: 700px;
+    left: 1100px;
+    opacity: 0;
+  }
+}
