@@ -1,9 +1,8 @@
 .cover {
-  width: 100%;
+  width: 99%;
   height: 790px;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
   background-image: url(../images/2614725.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,12 +15,13 @@
   box-shadow: 0 0 40px 15px #f4f1c9;
   position: absolute;
   top: 125px;
-  left: 305px;
+  left: 315px;
 }
 .star {
   width: 5px;
   height: 5px;
   background: white;
+  color: transparent;
   box-shadow: 0 0 10px white;
   border-radius: 50%;
   position: absolute;
@@ -67,6 +67,7 @@
   width: 8px;
   height: 8px;
   background: #ffd700;
+  color: transparent;
   border-radius: 50%;
   box-shadow: 0 0 10px #ffd700;
   animation: flyRandom 2s infinite ease-in-out;
@@ -88,7 +89,7 @@
   animation-delay: 2s;
 }
 .firefly:nth-child(4) {
-  top: 770px;
+  top: 750px;
   left: 600px;
   animation-delay: 2s;
 }
